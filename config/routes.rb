@@ -14,4 +14,8 @@ Rails.application.routes.draw do
   get "/one_product" => "products#one_product"
 
   get "/one_product/:id" => "products#one_product"
+
+  get "/products" => "products#index"
+
+  get "/products/:id" => "products#show"
 end

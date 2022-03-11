@@ -1,0 +1,23 @@
+### products index
+GET http://localhost:3000/products
+Content-Type: application/json
+
+###product create
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "koozie",
+  "price": 1,
+  "image_url": "image.jpg",
+  "description": "a coat for your can"
+}
+
+###product update
+PATCH http://localhost:3000/products/6
+Content-Type: application/json
+
+{
+ "image_url": "https://cdn11.bigcommerce.com/s-45mun2obzo/images/stencil/original/products/6108/28698/45e7706d3429f118a648ccd031984568_rsz__77495.1639784798.jpg?c=1"
+}
+

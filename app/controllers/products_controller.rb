@@ -1,12 +1,4 @@
 class ProductsController < ApplicationController
-  def index
-  end
-
-  def all_products
-    products = Product.all
-    render json: products.as_json
-  end
-
   def first_product
     product = Product.first
     render json: product.as_json
@@ -54,5 +46,12 @@ class ProductsController < ApplicationController
     product.description = params["description"] || product.description
     product.save
     render json: product.as_json
+  end
+
+  def delete
+    product_id = params["id"]
+    product = Product.find_by(id: product_id)
+    product.destroy
+    render json: { message: "Product successfully deleted" }
   end
 end

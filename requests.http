@@ -14,11 +14,12 @@ Content-Type: application/json
 }
 
 ###product update
-PATCH http://localhost:3000/products/6
+PATCH http://localhost:3000/products/7
 Content-Type: application/json
 
 {
- "image_url": "https://cdn11.bigcommerce.com/s-45mun2obzo/images/stencil/original/products/6108/28698/45e7706d3429f118a648ccd031984568_rsz__77495.1639784798.jpg?c=1"
+
+ "description": "cozy seat for turtle fans"
 }
 
 ###product delete

@@ -1,25 +1,29 @@
 ### products index
-GET http://localhost:3000/products
+GET http://localhost:3000/products.json
+Content-Type: application/json
+
+### products show
+GET http://localhost:3000/products/3.json
 Content-Type: application/json
 
 ###product create
-POST http://localhost:3000/products
+POST http://localhost:3000/products.json
 Content-Type: application/json
 
 {
-  "name": "koozie",
-  "price": 1,
+  "name": "keychain",
+  "price": 5,
   "image_url": "image.jpg",
-  "description": "a coat for your can"
+  "description": "a buddy for your keys"
 }
 
 ###product update
-PATCH http://localhost:3000/products/7
+PATCH http://localhost:3000/products/10.json
 Content-Type: application/json
 
 {
 
- "description": "cozy seat for turtle fans"
+ "description": "a fun buddy for your keys"
 }
 
 ###product delete

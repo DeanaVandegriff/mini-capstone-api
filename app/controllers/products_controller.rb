@@ -6,24 +6,20 @@ class ProductsController < ApplicationController
 
   def last_product
     product = Product.last
-    render json: product.as_json
-  end
-
-  def one_product
-    product_id = params["id"]
-    product = Product.find_by(id: product_id)
-    render json: product.as_json
+    render json: products.as_json
   end
 
   def index
     products = Product.all
-    render json: products.as_json
+    @products = products
+    render template: "products/index"
   end
 
   def show
     product_id = params["id"]
     product = Product.find_by(id: product_id)
-    render json: product.as_json(methods: [:is_discounted?, :tax, :total])
+    @product = product
+    render template: "products/show"
   end
 
   def create
@@ -34,7 +30,8 @@ class ProductsController < ApplicationController
       description: params["description"],
     )
     product.save
-    render json: product.as_json
+    @product = product
+    render template: "products/show"
   end
 
   def update
@@ -45,7 +42,8 @@ class ProductsController < ApplicationController
     product.image_url = params["image_url"] || product.image_url
     product.description = params["description"] || product.description
     product.save
-    render json: product.as_json
+    @product = product
+    render template: "products/show"
   end
 
   def delete

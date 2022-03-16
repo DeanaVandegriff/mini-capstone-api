@@ -11,19 +11,19 @@ POST http://localhost:3000/products.json
 Content-Type: application/json
 
 {
-  "name": "keychain",
-  "price": 5,
+  "name": "test item 1",
+  "price": "5",
   "image_url": "image.jpg",
-  "description": "a buddy for your keys"
+  "description": "test description"
 }
 
 ###product update
-PATCH http://localhost:3000/products/10.json
+PATCH http://localhost:3000/products/3.json
 Content-Type: application/json
 
 {
 
- "description": "a fun buddy for your keys"
+ "image_url": "https://i.etsystatic.com/11988511/r/il/5457a2/2931932728/il_1588xN.2931932728_6qva.jpg"
 }
 
 ###product delete

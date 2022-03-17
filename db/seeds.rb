@@ -23,3 +23,5 @@
 
 # supplier = Supplier.new(name: "Turtle Tech", email: "ttech@example.com", phone_number: "78912")
 # supplier.save
+
+image=Image

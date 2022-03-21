@@ -1,6 +1,7 @@
 ### products index
 GET http://localhost:3000/products.json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDc5NzE5NDJ9.f1c4yiZCwfwqWrtvy1f6VR9iViSKQjznybQTqDQF5FE
 
 ### products show
 GET http://localhost:3000/products/3.json

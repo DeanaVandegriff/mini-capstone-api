@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   delete "/products/:id" => "products#delete"
 
+  ### supplier routes ###
   get "/suppliers" => "suppliers#index"
 
   get "/suppliers/:id" => "suppliers#show"
@@ -28,4 +29,7 @@ Rails.application.routes.draw do
   patch "/suppliers/:id" => "suppliers#update"
 
   delete "/suppliers/:id" => "suppliers#delete"
+
+  ### user routes ####
+  post "/users" => "users#create"
 end

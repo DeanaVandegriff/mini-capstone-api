@@ -3,10 +3,10 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Peter Parker",
-  "email": "pparker@example.com",
-  "password": "Spiderman",
-  "password_confirmation": "Spiderman"
+  "name": "Katniss Everdeen",
+  "email": "girlonfire@example.com",
+  "password": "Peeta",
+  "password_confirmation": "Peeta"
 }
 
 

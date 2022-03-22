@@ -1,16 +1,7 @@
 class ProductsController < ApplicationController
-  def first_product
-    product = Product.first
-    render json: product.as_json
-  end
-
-  def last_product
-    product = Product.last
-    render json: products.as_json
-  end
-
+  before_action :authenticate_admin, except:[:index, :show]
+  
   def index
-    pp current_user
     @products = Product.all
     render template: "products/index"
   end
@@ -23,10 +14,10 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(
-      name: params["name"],
-      price: params["price"],
-      image_url: params["image_url"],
-      description: params["description"],
+      name: params[:name],
+      price: params[:price],
+      supplier_id: params[:supplier_id],
+      description: params[:description],
     )
     if @product.save
       render template: "products/show"

@@ -10,12 +10,14 @@ Content-Type: application/json
 ###product create
 POST http://localhost:3000/products.json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwNjE4Njd9.Sv_FLOjLOVqMNiGGjprQBCZSWUbA0fjL1V-J5YZ4yIs
 
 {
-  "name": "test item 1",
-  "price": "5",
-  "image_url": "image.jpg",
-  "description": "test description"
+  "name": "Toothbrush",
+  "price": "3",
+  "description": "cleans your teeth",
+  "supplier_id": "3"
+
 }
 
 ###product update
@@ -30,4 +32,26 @@ Content-Type: application/json
 ###product delete
 
 DELETE http://localhost:3000/products/2
+Content-Type: application/json
+
+###orders create
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "user_id": "2",
+  "product_id": "1",
+  "quantity": "1",
+  "subtotal": "999",
+  "tax": "12",
+  "total": "1011"
+}
+
+###orders show
+GET http://localhost:3000/orders/1
+Content-Type: application/json
+
+###orders index
+
+GET http://localhost:3000/orders
 Content-Type: application/json

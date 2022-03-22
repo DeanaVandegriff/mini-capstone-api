@@ -2,9 +2,10 @@
   id: @product.id,
   name: @product.name,
   price: @product.price,
-  image: @product.image,
   supplier: @product.supplier,
   description: @product.description,
   created_at: @product.created_at,
   updated_at: @product.updated_at,
 }
+
+ #image: @product.image

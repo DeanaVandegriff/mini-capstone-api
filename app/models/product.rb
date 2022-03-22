@@ -11,6 +11,8 @@ has_many :images
   # def images
   #   Image.where(product_id: id)
   # end
+has_many :orders
+
 
   def is_discounted?
     if price < 10

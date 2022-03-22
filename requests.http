@@ -1,16 +1,20 @@
+@jwt= eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwNjE4Njd9.Sv_FLOjLOVqMNiGGjprQBCZSWUbA0fjL1V-J5YZ4yIs
+
+
 ### products index
 GET http://localhost:3000/products.json
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDc5NzE5NDJ9.f1c4yiZCwfwqWrtvy1f6VR9iViSKQjznybQTqDQF5FE
+Authorization: Bearer {{@jwt}}
 
 ### products show
 GET http://localhost:3000/products/3.json
 Content-Type: application/json
+Authorization: Bearer {{@jwt}}
 
 ###product create
 POST http://localhost:3000/products.json
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwNjE4Njd9.Sv_FLOjLOVqMNiGGjprQBCZSWUbA0fjL1V-J5YZ4yIs
+Authorization: Bearer {{@jwt}}
 
 {
   "name": "Toothbrush",
@@ -23,6 +27,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwNjE4N
 ###product update
 PATCH http://localhost:3000/products/3.json
 Content-Type: application/json
+Authorization: Bearer {{@jwt}}
 
 {
 
@@ -31,8 +36,9 @@ Content-Type: application/json
 
 ###product delete
 
-DELETE http://localhost:3000/products/2
+DELETE http://localhost:3000/products/13
 Content-Type: application/json
+Authorization: Bearer {{@jwt}}
 
 ###orders create
 POST http://localhost:3000/orders

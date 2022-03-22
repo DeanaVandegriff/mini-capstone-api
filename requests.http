@@ -61,3 +61,23 @@ Content-Type: application/json
 
 GET http://localhost:3000/orders
 Content-Type: application/json
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Katniss Everdeen",
+  "email": "girlonfire@example.com",
+  "password": "Peeta",
+  "password_confirmation": "Peeta"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "girlonfire@example.com",
+  "password": "Peeta"
+}

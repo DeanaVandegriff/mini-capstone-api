@@ -30,16 +30,16 @@ Rails.application.routes.draw do
 
   delete "/suppliers/:id" => "suppliers#delete"
 
-  ### user route ###
+  ### user route- sign up ###
   post "/users" => "users#create"
 
-  ### session route ###
+  ### session route- log in ###
   post "/sessions" => "sessions#create"
 
   ### order route ###
   get "/orders" => "orders#index"
 
   get "/orders/:id" => "orders#show"
-  
+
   post "/orders" => "orders#create"
 end

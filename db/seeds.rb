@@ -38,3 +38,77 @@
 
 # category = Category.new(name: "office supplies")
 # category.save
+
+# CategoryProduct.create!([
+#   {
+#     category_id: 1,
+#     product_id: 8,
+#   },
+#   {
+#     category_id: 2,
+#     product_id: 1,
+#   },
+#   {
+#     category_id: 3,
+#     product_id: 7,
+#   },
+#   {
+#     category_id: 4,
+#     product_id: 6,
+#   },
+#   {
+#     category_id: 4,
+#     product_id: 10,
+#   },
+#   {
+#     category_id: 4,
+#     product_id: 14,
+#   },
+#   {
+#     category_id: 5,
+#     product_id: 3,
+#   },
+#   {
+#     category_id: 5,
+#     product_id: 9,
+#   },
+# ])
+
+# Image.create!([
+#   {
+#     product_id: 1,
+#     url: "https://studentlegallounge.humboldt.edu/sites/default/files/styles/panopoly_image_original/public/image-coming-soon.jpg?itok=e-RY5zkr",
+#   },
+# {
+#   product_id: 3,
+#   url: "https://studentlegallounge.humboldt.edu/sites/default/files/styles/panopoly_image_original/public/image-coming-soon.jpg?itok=e-RY5zkr",
+# },
+# {
+#   product_id: 6,
+#   url: "https://studentlegallounge.humboldt.edu/sites/default/files/styles/panopoly_image_original/public/image-coming-soon.jpg?itok=e-RY5zkr",
+# },
+# {
+#   product_id: 7,
+#   url: "https://studentlegallounge.humboldt.edu/sites/default/files/styles/panopoly_image_original/public/image-coming-soon.jpg?itok=e-RY5zkr",
+# },
+# {
+#   product_id: 8,
+#   url: "https://studentlegallounge.humboldt.edu/sites/default/files/styles/panopoly_image_original/public/image-coming-soon.jpg?itok=e-RY5zkr",
+# },
+# {
+#   product_id: 9,
+#   url: "https://studentlegallounge.humboldt.edu/sites/default/files/styles/panopoly_image_original/public/image-coming-soon.jpg?itok=e-RY5zkr",
+# },
+# {
+#   product_id: 10,
+#   url: "https://studentlegallounge.humboldt.edu/sites/default/files/styles/panopoly_image_original/public/image-coming-soon.jpg?itok=e-RY5zkr",
+# },
+#   {
+#     product_id: 14,
+#     url: "https://studentlegallounge.humboldt.edu/sites/default/files/styles/panopoly_image_original/public/image-coming-soon.jpg?itok=e-RY5zkr",
+#   },
+#   {
+#     product_id: 7,
+#     url: "https://studentlegallounge.humboldt.edu/sites/default/files/styles/panopoly_image_original/public/image-coming-soon.jpg?itok=e-RY5zkr",
+#   },
+# ])

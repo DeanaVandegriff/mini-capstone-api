@@ -4,19 +4,14 @@ class Product < ApplicationRecord
   # validates :description, presence: true
 
   belongs_to :supplier
-
-  has_many :category_products
-
   has_many :images
 
-  has_many :orders
-
+  has_many :category_products
   has_many :categories, through: :category_products
-  # def products
-  #   category_products.map do |category_products|
-  #     category_product.category
-  #   end
-  # end
+
+  has_many :carted_products
+  has_many :orders, through: :carted_products
+
 
   def is_discounted?
     if price < 10

@@ -3,8 +3,12 @@
     id: product.id,
     name: product.name,
     price: product.price,
-    supplier: product.supplier,
     description: product.description,
-
+    images: product.images,
+    supplier: product.supplier,
+    tax: product.tax,
+    total: product.total,
+    is_discounted?: product.is_discounted?,
+    categories: product.categories
   }
 end

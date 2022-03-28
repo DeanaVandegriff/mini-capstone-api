@@ -24,4 +24,17 @@
 # supplier = Supplier.new(name: "Turtle Tech", email: "ttech@example.com", phone_number: "78912")
 # supplier.save
 
-image=Image
+# category = Category.new(name: "appliances")
+# category.save
+
+# category = Category.new(name: "electronics")
+# category.save
+
+# category = Category.new(name: "furniture")
+# category.save
+
+# category = Category.new(name: "household items")
+# category.save
+
+# category = Category.new(name: "office supplies")
+# category.save
